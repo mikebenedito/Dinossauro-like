@@ -12,8 +12,7 @@ const jump = () => {
 const loop = setInterval(() => {
     const pipePosition = pipe.offsetLeft;
     const marioPosition = window.getComputedStyle(mario).bottom.replace('px','');
-    console.log(marioPosition);
-    console.log(pipePosition);
+
 
     if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80){
         pipe.style.animation = 'none';
@@ -26,8 +25,17 @@ const loop = setInterval(() => {
         mario.style.width = '75px';
         mario.style.marginLeft = '50px';
 
-        clearInterval(loop);
+        const modal = document.createElement("dialog");
+        modal.innerHTML = "Você perdeu!";
+        document.getElementById("divModal").appendChild(modal);
+        const btn = document.createElement("button");
+        btn.innerHTML = "Reiniciar";
+        document.getElementById("divModal").appendChild(btn);
 
+        modal.showDialog();
+
+        clearInterval(loop);
+        
     };
 }, 10);
 

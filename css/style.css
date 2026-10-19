@@ -37,6 +37,11 @@
     animation: jump 500ms ease-out;
 }
 
+.divModal{
+    width: 500px;
+    height: 500px;
+}
+
 
 @keyframes pipe-animation{
     from {
