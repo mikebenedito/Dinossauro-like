@@ -26,13 +26,15 @@ const loop = setInterval(() => {
         mario.style.marginLeft = '50px';
 
         const modal = document.createElement("dialog");
-        modal.innerHTML = "Você perdeu!";
+        modal.innerHTML = '<p>Você perdeu!</p><button id="btn">Reiniciar</button>'
         document.getElementById("divModal").appendChild(modal);
-        const btn = document.createElement("button");
-        btn.innerHTML = "Reiniciar";
-        document.getElementById("divModal").appendChild(btn);
 
-        modal.showDialog();
+        modal.showModal();
+
+        const btn = document.getElementById("btn");
+        btn.addEventListener('click', function(){
+            location.reload();
+        });
 
         clearInterval(loop);
         
