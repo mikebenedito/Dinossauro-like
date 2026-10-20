@@ -14,4 +14,10 @@ Então, meu próximo objetivo é melhorar essa parte, incrementando melhorias na
 
 - Contar os pontos;
 - Aumentar a dificuldade;
-- Adicionar um botão de reset.
+- Adicionar um botão de reset. (FEITO DIA 20/10/2026)
+
+Relatório de implementação:
+Implementei um modal que aparece ao perder com a mensagem "você perdeu!"
+com um botão que reinicia o jogo.
+Para resolver esse problema usei de fonte os videos: https://youtu.be/RKyRJA2z7sI?si=3Om4_x4v9NRqobQj e https://youtu.be/t_GuuhNNcNQ?si=wIpBrmeAP2_bNXEq
+e consultei o chatgpt.
