@@ -61,10 +61,20 @@ dialog p{
     margin-top: 20px;
 }
 
+dialog p2{
+    margin-top: 5px;
+    font-size: large;
+}
+
+dialog p3{
+    font-size: xx-large;
+    margin-top: 15px;
+}
+
 dialog button{
     width: 50%;
     height: 20px;
-    margin-top: 25%;
+    margin-top: 10%;
 }
 
 
