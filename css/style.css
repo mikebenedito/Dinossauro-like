@@ -14,6 +14,10 @@
     background: linear-gradient(#87ceeb, #E0F6FF);
 }
 
+.pontos{
+    font-size: xx-large;
+}
+
 .pipe{
     position: absolute;
     bottom: 0;
@@ -37,9 +41,28 @@
     animation: jump 500ms ease-out;
 }
 
-.divModal{
+dialog{
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     width: 500px;
-    height: 500px;
+    height: 300px;
+}
+
+dialog p{
+    font-size: x-large;
+    margin-top: 20px;
+}
+
+dialog button{
+    width: 50%;
+    height: 20px;
+    margin-top: 25%;
 }
 
 
