@@ -12,10 +12,12 @@
     position: relative;
     overflow: hidden;
     background: linear-gradient(#87ceeb, #E0F6FF);
+    margin-bottom: 5px;
 }
 
-.pontos{
-    font-size: xx-large;
+p{
+    font-size: x-large;
+    margin-left: 5px;
 }
 
 .pipe{
