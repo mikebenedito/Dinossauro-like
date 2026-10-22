@@ -13,7 +13,7 @@ O jogo é bem simples: você tem que pular por cima do obstáculo que vem na dir
 Então, meu próximo objetivo é melhorar essa parte, incrementando melhorias na jogabilidade, como:
 
 - Contar os pontos; (FEITO DIA 21/10/2026)
-- Aumentar a dificuldade;
+- Aumentar a dificuldade; (FEITO DIA 22/10/2026)
 - Adicionar um botão de reset. (FEITO DIA 20/10/2026)
 
 Relatório de implementação:
@@ -29,3 +29,10 @@ criava a parte onde mostrava os pontos mas não aumentava os pontos, e quando
 mostrava ele criva uma mensagem pra cada ponto e floodava a tela.
 Mas por fim consegui resolver usando a ajuda do meu amigo Luan Vieira e 
 consultando o chatGPT.
+
+Implementei um sistema que aumenta a dificuldade do game, no caso os obstaculos
+vem mais rapidos na direção do Mario. Em alguns navegadores o obstaculo
+nasce no meio do caminho, eu tive muita dificuldade para arrumar isso, quebrei
+a cabeça de varias formas mas não consegui resolver, então deixei como está.
+Consultei o chatgpt apenas, pois minha solução para aumentar a dificuldade foi
+bem simples e ele só me ajudou a entender alguns termos.

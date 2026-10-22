@@ -2,7 +2,6 @@ const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 let distanciaPercorrida = 0;
 
-
 const jump = () => {
     mario.classList.add('jump');
 
@@ -14,22 +13,41 @@ const jump = () => {
 const mostraPontos = document.createElement("p");
 document.getElementById("pontos").appendChild(mostraPontos);
 
-function mostraDistancia() {
+atualizaDistancia();
+
+function atualizaDistancia() {
     mostraPontos.textContent = `Distância: ${distanciaPercorrida}m`;
-}
+};
 
-function calculaPontos() {
+function aumentaDistancia() {
     distanciaPercorrida++;
-}
+};
 
-mostraDistancia(); 
+
+function aumentaDificuldade(){
+    if(distanciaPercorrida >= 750){
+        pipe.style.animation = 'pipe-animation 1.2s infinite linear';
+    };
+    if(distanciaPercorrida >= 1500){
+        pipe.style.animation = 'pipe-animation 1s infinite linear';
+    };
+    if(distanciaPercorrida >= 2250){
+        pipe.style.animation = 'pipe-animation 0.8s infinite linear';
+    };
+    if(distanciaPercorrida >= 3000){
+        pipe.style.animation = 'pipe-animation 0.4s infinite linear';
+    };
+};
+
+
 
 const loop = setInterval(() => {
     const pipePosition = pipe.offsetLeft;
     const marioPosition = window.getComputedStyle(mario).bottom.replace('px','');
     
-    calculaPontos();
-    mostraDistancia();  
+    aumentaDistancia();
+    atualizaDistancia();
+    aumentaDificuldade()
     
               
     if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80){
